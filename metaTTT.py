@@ -110,7 +110,7 @@ class MetaTTT:
             self.Board[board][cell] = self.turn
             self.turn *= -1
             # Set next board active
-            if 0 in self.Board[board]:
+            if 0 in self.Board[cell]:
                 self.activeBoard = cell
             else:
                 self.activeBoard = -1 
